@@ -1,6 +1,7 @@
 <p> Welcome, <%= current_user.username %>
-<h2> Your Tweets below: </h2>
+<h2> Your Tweets are listed below: </h2>
 
+<<<<<<< HEAD
 
   <% @tweets.each do |tweet| %>
     <div>
@@ -10,3 +11,15 @@
   <% end %>
 
  <a href="/logout">Log out!</a>
+=======
+<% @tweets.each do |tweet| %>
+  <div>
+    <%= tweet.content %>
+  </div>
+<% end %>
+
+
+<form method="POST" action="/create_tweet">
+  <input type=submit value="create a tweet">
+</form>
+>>>>>>> 2481f14bceb514ccecc338c03b0b99aee207dbc6
